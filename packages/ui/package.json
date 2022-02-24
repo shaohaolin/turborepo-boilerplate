@@ -5,10 +5,23 @@
   "types": "./index.tsx",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "tsconfig": "*",
+    "babel-loader": "^8.2.3",
     "config": "*",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "@storybook/addon-docs": "^6.4.19"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6007",
+    "build-storybook": "build-storybook"
   }
 }
